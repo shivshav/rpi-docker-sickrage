@@ -5,6 +5,8 @@ MAINTAINER Shivneil Prasad <sprasad0603@gmail.com>
 RUN mkdir -p /data/completed_downloads /data/tvshows /opt/SickRage/data
 # Copy over config.ini with initial configuration to work with transmission 
 # BEFORE making it a volume to make sure it actually takes effect
+# Unfortunately, initial volume data does not populate on a bind-mount (i.e. -v
+# <some host dir>:<container-src>), only on named volumes
 COPY config.ini /opt/SickRage/data
 VOLUME /data/completed_downloads /data/tvshows /opt/SickRage/data
 
