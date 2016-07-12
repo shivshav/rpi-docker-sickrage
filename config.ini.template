@@ -10,7 +10,7 @@ cur_commit_hash = dbf446a51f8b6e900aba41e947ef9f925ae12714
 cur_commit_branch = ""
 git_newver = 0
 config_version = 7
-encryption_version = 2
+encryption_version = 0
 encryption_secret = g0CnLf+tTwmN7QAdi0LvWk4kbB/MSkpEp1pYkzVVSZw=
 log_dir = Logs
 log_nr = 5
