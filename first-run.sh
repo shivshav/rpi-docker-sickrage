@@ -15,8 +15,12 @@ fi
 if [[ ! -f $CONFIG_DIR/$CONFIG || "$OVERWRITE_CONFIG" = true ]]; then
     cp /${CONFIG}.template $CONFIG_DIR/$CONFIG
 
+    # Transmission intercommunication parameters
     sed -i "s/{{TR_USERNAME}}/${TR_USERNAME}/g" $CONFIG_DIR/$CONFIG
     sed -i "s/{{TR_PASSWORD}}/${TR_PASSWORD}/g" $CONFIG_DIR/$CONFIG
+    # Sickrage web user configuration
+    sed -i "s/{{SR_USERNAME}}/${SR_USERNAME}/g" $CONFIG_DIR/$CONFIG
+    sed -i "s/{{SR_PASSWORD}}/${SR_PASSWORD}/g" $CONFIG_DIR/$CONFIG
 else
     echo "Current settings file will not be overwritten."
 fi
