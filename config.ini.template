@@ -11,7 +11,6 @@ cur_commit_branch = ""
 git_newver = 0
 config_version = 7
 encryption_version = 0
-encryption_secret = g0CnLf+tTwmN7QAdi0LvWk4kbB/MSkpEp1pYkzVVSZw=
 log_dir = Logs
 log_nr = 5
 log_size = 1
@@ -23,14 +22,12 @@ web_log = 0
 web_root = ""
 web_username = ""
 web_password = ""
-web_cookie_secret = QAqdLNLQRAyjFi18wm0dXby/mhpWXEujrOK3ZJV1vdA=
 web_use_gzip = 1
 ssl_verify = 1
 download_url = ""
 localhost_ip = ""
 cpu_preset = NORMAL
 anon_redirect = http://dereferer.org/?
-api_key = c8994ac69f2ef51c875461164495acbb
 debug = 0
 dbdebug = 0
 default_page = home
