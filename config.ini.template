@@ -768,7 +768,7 @@ synologynotifier_notify_ondownload = 0
 synologynotifier_notify_onsubtitledownload = 0
 [Trakt]
 use_trakt = 1
-trakt_username = "{{TRAKT_USERNAME}}"
+trakt_username = "{{TRAKT_ACCOUNT}}"
 trakt_access_token = ""
 trakt_refresh_token = ""
 trakt_remove_watchlist = 0

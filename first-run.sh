@@ -20,7 +20,7 @@ if [[ ! -f $CONFIG_DIR/$CONFIG || "$OVERWRITE_CONFIG" = true ]]; then
     sed -i "s/{{SR_USERNAME}}/${SR_USERNAME}/g" $CONFIG_DIR/$CONFIG
     sed -i "s/{{SR_PASSWORD}}/${SR_PASSWORD}/g" $CONFIG_DIR/$CONFIG
     # Trakt user configuration
-    sed -i "s/{{TRAKT_USERNAME}}/${TRAKT_USERNAME}/g" $CONFIG_DIR/$CONFIG
+    sed -i "s/{{TRAKT_ACCOUNT}}/${TRAKT_ACCOUNT}/g" $CONFIG_DIR/$CONFIG
 else
     echo "Current settings file will not be overwritten."
 fi
